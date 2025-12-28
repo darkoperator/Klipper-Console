@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Moonraker update_manager support for automatic updates via Mainsail/Fluidd
+- Installation script (scripts/install.sh) for automated setup
+- Update manager configuration template (scripts/klipper-console-moonraker.conf)
+- Quick copy-paste configuration snippet (scripts/moonraker-update-snippet.txt)
+- GitHub release workflow for automated releases
+- Comprehensive installation documentation (docs/user-guide/INSTALLATION.md)
+- Method 4 installation instructions in README.md
 - Initial public release preparation
 - Comprehensive README with installation instructions
 - CONTRIBUTING.md with development guidelines

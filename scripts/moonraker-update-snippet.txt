@@ -1,0 +1,24 @@
+================================================================================
+Moonraker Update Manager Configuration for Klipper-Console
+================================================================================
+
+Add this to your ~/printer_data/config/moonraker.conf file:
+
+[update_manager klipper-console]
+type: git_repo
+path: ~/Klipper-Console
+origin: https://github.com/darkoperator/Klipper-Console.git
+primary_branch: main
+virtualenv: ~/klipper-console-env
+requirements: pyproject.toml
+install_script: scripts/install.sh
+channel: stable
+
+After adding the configuration, restart Moonraker:
+
+sudo systemctl restart moonraker
+
+Then check your Mainsail or Fluidd web interface to see Klipper-Console
+listed in the update manager alongside Klipper and Moonraker!
+
+================================================================================

@@ -14,6 +14,14 @@ python3 -m venv venv
 ./venv/bin/pip install -e .
 ```
 
+### Install for production (with Moonraker update_manager)
+```bash
+./scripts/install.sh
+```
+
+This creates a virtual environment at `~/klipper-console-env` and installs the package.
+For Moonraker update_manager integration, see README.md Method 4.
+
 ### Run the console
 ```bash
 ./venv/bin/klipper-console

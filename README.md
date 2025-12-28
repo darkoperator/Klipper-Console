@@ -109,6 +109,60 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -e ".[dev]"
 ```
 
+### Method 4: Moonraker Update Manager (Recommended for Klipper Users)
+
+Enable automatic updates through Mainsail/Fluidd web interface alongside Klipper and Moonraker.
+
+#### Step 1: Install Klipper-Console
+
+SSH into your printer and run:
+
+```bash
+cd ~
+git clone https://github.com/darkoperator/Klipper-Console.git
+cd Klipper-Console
+./scripts/install.sh
+```
+
+The installer will create a virtual environment and install all dependencies automatically.
+
+#### Step 2: Configure Moonraker
+
+Add this to your `~/printer_data/config/moonraker.conf` file:
+
+```ini
+[update_manager klipper-console]
+type: git_repo
+path: ~/Klipper-Console
+origin: https://github.com/darkoperator/Klipper-Console.git
+primary_branch: main
+virtualenv: ~/klipper-console-env
+requirements: pyproject.toml
+install_script: scripts/install.sh
+channel: stable
+```
+
+#### Step 3: Restart Moonraker
+
+```bash
+sudo systemctl restart moonraker
+```
+
+Now Klipper-Console will appear in your update manager and can be updated with one click!
+
+#### Step 4: Run Klipper-Console
+
+```bash
+~/klipper-console-env/bin/klipper-console
+```
+
+Or create an alias in your `~/.bashrc`:
+```bash
+alias klipper-console='~/klipper-console-env/bin/klipper-console'
+```
+
+For detailed installation instructions and troubleshooting, see [docs/user-guide/INSTALLATION.md](docs/user-guide/INSTALLATION.md).
+
 ---
 
 ## Quick Start
