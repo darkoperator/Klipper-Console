@@ -27,7 +27,7 @@ When filing a bug report, include:
 ### Suggesting Features
 
 Feature requests are welcome! Please:
-- Check existing issues and PRD.md to see if it's already planned
+- Check existing issues and docs/architecture/PRD.md to see if it's already planned
 - Provide a clear use case
 - Explain how it aligns with the project goals
 - Consider implementation complexity
@@ -76,7 +76,7 @@ pip install -e ".[dev]"
 
 - Write **docstrings** for all public functions and classes
 - Use **Google-style** docstrings
-- Keep **README.md** and **PRD.md** up to date
+- Keep **README.md** and **docs/architecture/PRD.md** up to date
 - Add **comments** for complex logic
 
 ### Example Docstring
@@ -177,10 +177,20 @@ klipper-console/
 │   ├── completion/           # Tab completion
 │   └── console_viewer.py     # Console viewer
 ├── tests/                    # Test suite
+│   ├── unit/                 # Unit tests
+│   └── integration/          # Integration tests
 ├── docs/                     # Documentation
+│   ├── architecture/         # Architecture & PRD
+│   ├── features/             # Feature documentation
+│   └── user-guide/           # User guides
+├── scripts/                  # Scripts
+│   ├── dev/                  # Development scripts
+│   └── examples/             # Example scripts
 ├── README.md                 # User documentation
-├── PRD.md                    # Product requirements
 ├── CONTRIBUTING.md           # This file
+├── CHANGELOG.md              # Version history
+├── CLAUDE.md                 # AI assistant instructions
+├── klipper-console.sh        # Wrapper script
 └── pyproject.toml           # Package configuration
 ```
 
@@ -235,7 +245,7 @@ klipper-console/
 ## Questions?
 
 - Open an issue for discussion
-- Check PRD.md for project vision and roadmap
+- Check docs/architecture/PRD.md for project vision and roadmap
 - Review existing code for patterns and examples
 
 ## License

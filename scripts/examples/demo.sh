@@ -6,7 +6,7 @@ echo ""
 echo "Running various commands to demonstrate the console..."
 echo ""
 
-./klipper-console.sh <<'EOF'
+../../klipper-console.sh <<'EOF'
 help
 get_sensor
 get_sensor chamber

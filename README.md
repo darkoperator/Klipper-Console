@@ -273,7 +273,7 @@ export MOONRAKER_TIMEOUT="180"
 
 ### Configuration File (Future)
 
-Configuration file support is planned for v1.0. See [PRD.md](PRD.md) for details.
+Configuration file support is planned for v1.0. See [PRD.md](docs/architecture/PRD.md) for details.
 
 ---
 
@@ -422,7 +422,7 @@ Klipper Console is built with a modular architecture:
 - **Completion** - Context-aware tab completion
 - **Models** - Data models for printer components
 
-See [PRD.md](PRD.md) for detailed architecture and design decisions.
+See [PRD.md](docs/architecture/PRD.md) for detailed architecture and design decisions.
 
 ---
 
@@ -445,7 +445,7 @@ See [PRD.md](PRD.md) for detailed architecture and design decisions.
 - Comprehensive documentation
 - User guide and tutorials
 
-See [PRD.md](PRD.md) for complete roadmap.
+See [PRD.md](docs/architecture/PRD.md) for complete roadmap.
 
 ---
 

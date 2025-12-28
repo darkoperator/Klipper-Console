@@ -4,7 +4,7 @@
 echo "=== Final Klipper Console Test ==="
 echo ""
 
-./klipper-console.sh <<'EOF'
+../../klipper-console.sh <<'EOF'
 # Test help
 help
 
