@@ -32,7 +32,8 @@ class KlipperShell:
 
     def run(self):
         """Run the interactive shell loop."""
-        console.print("[bold green]Klipper Console[/bold green]")
+        console.print("[bold green]Klipper Console v0.1.0[/bold green]")
+        console.print("[dim]Author: Carlos Perez <carlos_perez@darkoperator.com>[/dim]")
         console.print("Type 'help' for available commands, 'exit' to quit.\n")
 
         while True:
